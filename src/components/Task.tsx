@@ -49,7 +49,9 @@ const Task = ({
         setInput(inputAsText);
       }
     };
-
+    
+    setSolution1("0");
+    setSolution2("0");
     loadData();
   }, [inputUri, solutionUri]);
 

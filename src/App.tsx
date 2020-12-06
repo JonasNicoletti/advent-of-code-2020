@@ -17,6 +17,7 @@ import passwordPhilosophy from "./solutions/2020/2_password_philosophy";
 import tobogganTrajectory from "./solutions/2020/3_toboggan_trajectory";
 import passportProcessing from "./solutions/2020/4_passport_processing";
 import binaryBoarding from "./solutions/2020/5_binary_boarding";
+import customCustoms from "./solutions/2020/6_custom_customs";
 
 export const App = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -98,14 +99,14 @@ export const App = () => {
         },
         {
           id: "2020_6",
-          title: "Day 6: ??? ???",
-          first: false,
+          title: "Day 6: Custom Customs",
+          first: true,
           second: false,
           descriptionUri: "https://adventofcode.com/2020/day/6",
-          //inputUri: "./data/binary_boarding.txt",
-          //solutionUri:
-          //  "https://raw.githubusercontent.com/JonasNicoletti/advent-of-code/main/src/solutions/2020/5_binary_boarding/index.ts",
-          //solutionFn: binaryBoarding,
+          inputUri: "./data/custom_customs.txt",
+          solutionUri:
+            "https://raw.githubusercontent.com/JonasNicoletti/advent-of-code/main/src/solutions/2020/6_custom_customs/index.ts",
+          solutionFn: customCustoms,
           changeTask: changeSelectedTask,
         },
       ],
