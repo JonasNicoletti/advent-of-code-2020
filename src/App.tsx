@@ -101,7 +101,7 @@ export const App = () => {
           id: "2020_6",
           title: "Day 6: Custom Customs",
           first: true,
-          second: false,
+          second: true,
           descriptionUri: "https://adventofcode.com/2020/day/6",
           inputUri: "./data/custom_customs.txt",
           solutionUri:
