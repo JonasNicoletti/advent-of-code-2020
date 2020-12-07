@@ -18,6 +18,7 @@ import tobogganTrajectory from "./solutions/2020/3_toboggan_trajectory";
 import passportProcessing from "./solutions/2020/4_passport_processing";
 import binaryBoarding from "./solutions/2020/5_binary_boarding";
 import customCustoms from "./solutions/2020/6_custom_customs";
+import handyHaversacks from "./solutions/2020/7_handy_haversacks";
 
 export const App = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -107,6 +108,18 @@ export const App = () => {
           solutionUri:
             "https://raw.githubusercontent.com/JonasNicoletti/advent-of-code/main/src/solutions/2020/6_custom_customs/index.ts",
           solutionFn: customCustoms,
+          changeTask: changeSelectedTask,
+        },
+        {
+          id: "2020_7",
+          title: "Day 7: Handy Haversacks",
+          first: true,
+          second: true,
+          descriptionUri: "https://adventofcode.com/2020/day/7",
+          inputUri: "./data/handy_haversacks.txt",
+          solutionUri:
+            "https://raw.githubusercontent.com/JonasNicoletti/advent-of-code/main/src/solutions/2020/7_handy_haversacks/index.ts",
+          solutionFn: handyHaversacks,
           changeTask: changeSelectedTask,
         },
       ],

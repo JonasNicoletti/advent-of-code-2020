@@ -37,7 +37,6 @@ const Task = ({
   const [isLoading, setIsLoading] = useState(false);
   const [solution1, setSolution1] = useState("0");
   const [solution2, setSolution2] = useState("0");
-
   useEffect(() => {
     const loadData = async () => {
       if (solutionUri) {
@@ -49,7 +48,7 @@ const Task = ({
         setInput(inputAsText);
       }
     };
-    
+
     setSolution1("0");
     setSolution2("0");
     loadData();
@@ -62,7 +61,7 @@ const Task = ({
       const sol2 = await solutionFn(false);
       setSolution1(sol1);
       setSolution2(sol2);
-      setIsLoading(false)
+      setIsLoading(false);
     }
   };
   return (
