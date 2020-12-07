@@ -16,7 +16,8 @@ import React, { useContext, useEffect, useState } from "react";
 import { TaskItemProps } from "../ui/TaskItem";
 import { getFileAsText, getTask } from "../utils";
 import { Light as SyntaxHighlighter } from "react-syntax-highlighter";
-import allyDark from "react-syntax-highlighter/dist/esm/styles/hljs/a11y-dark";
+import { darcula } from 'react-syntax-highlighter/dist/esm/styles/hljs'
+import js from 'react-syntax-highlighter/dist/esm/languages/hljs/javascript'
 import { ArrowForwardIcon, ExternalLinkIcon } from "@chakra-ui/icons";
 import { useParams } from "react-router-dom";
 import SolutionContext from "../solutionContext";
@@ -48,7 +49,9 @@ const Task = () => {
   const [solution2, setSolution2] = useState("0");
   let solutionUri = "";
   let inputUri = "";
-  
+
+  SyntaxHighlighter.registerLanguage('javascript', js);
+
   useEffect(() => {
     const loadData = async () => {
       if (solutionUri) {
@@ -64,7 +67,7 @@ const Task = () => {
     setSolution1("0");
     setSolution2("0");
     loadData();
-  }, [year, day]);
+  }, [year, day, inputUri, solutionUri]);
 
 
   if (task === undefined) {
@@ -119,10 +122,10 @@ const Task = () => {
           </AccordionButton>
           <AccordionPanel textAlign="left" pb={4}>
             <SyntaxHighlighter
-              language="typescript"
+              language="javascript"
               wrapLongLines
               showLineNumbers
-              style={allyDark}
+              style={darcula}
             >
               {code}
             </SyntaxHighlighter>
@@ -136,7 +139,7 @@ const Task = () => {
             <AccordionIcon />
           </AccordionButton>
           <AccordionPanel textAlign="left" pb={4}>
-            <SyntaxHighlighter language="text" showLineNumbers style={allyDark}>
+            <SyntaxHighlighter language="text" showLineNumbers style={darcula}>
               {input}
             </SyntaxHighlighter>
           </AccordionPanel>
