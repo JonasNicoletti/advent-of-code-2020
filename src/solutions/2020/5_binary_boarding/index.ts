@@ -4,8 +4,8 @@ import { getInput } from "../../../utils";
 const TRANSALTION = new Map<string, string>([["F","0"], ["B","1"], ["R", "1"], ["L", "0"]]);
 const FACTOR = 8;
 
-const binaryBoarding = async (part1: boolean): Promise<number> => {
-    const list = await getInput('./data/binary_boarding.txt');
+const binaryBoarding = async (part1: boolean, inputUri: string): Promise<number> => {
+    const list = await getInput(inputUri);
     
     const seatIds = list.map(passport => convertToSeatId(passport));
     const max = _.max(seatIds);

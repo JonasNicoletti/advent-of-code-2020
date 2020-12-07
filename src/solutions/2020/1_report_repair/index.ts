@@ -1,7 +1,8 @@
 import { getInput } from "../../../utils";
 
-const reportRepair = async (part1: boolean) => {
-    const string_list = await getInput('./data/report_repair.txt');
+const reportRepair = async (part1: boolean, inputUri: string) => {
+
+    const string_list = await getInput(inputUri);
 
     const list = string_list.map(line => +line);
     for (let i = 0; i < list.length; i++) {

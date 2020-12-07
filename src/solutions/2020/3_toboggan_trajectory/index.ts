@@ -8,9 +8,9 @@ interface CountInput {
     down: number
 }
 
-const tobogganTrajectory = async (part1: boolean): Promise<number> => {
+const tobogganTrajectory = async (part1: boolean, inputUri: string): Promise<number> => {
 
-    const list = await getInput('./data/toboggan_trajectory.txt');
+    const list = await getInput(inputUri);
 
     let countInputs: Array<CountInput> = [{ right: 3, down: 1 }];
     var countTree = 0;

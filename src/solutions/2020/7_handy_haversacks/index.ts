@@ -1,8 +1,8 @@
 import { getInput } from "../../../utils";
 import * as _ from 'lodash';
 
-const handyHaversacks = async (part1: boolean): Promise<string> => {
-    const list = await getInput('./data/handy_haversacks.txt');
+const handyHaversacks = async (part1: boolean, inputUri: string): Promise<string> => {
+    const list = await getInput(inputUri);
     const myBag = "shiny gold";
 
     const bagRules = list.map(entry => createRule(entry));

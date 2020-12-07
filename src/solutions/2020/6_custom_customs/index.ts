@@ -1,8 +1,8 @@
 import { getInput } from "../../../utils";
 import * as _ from 'lodash';
 
-const CustomCustoms = async (part1: boolean): Promise<string> => {
-    const list = await getInput('./data/custom_customs.txt', '\n\n');
+const CustomCustoms = async (part1: boolean, inputUri: string): Promise<string> => {
+    const list = await getInput(inputUri, '\n\n');
     if (part1) return _.sum(
         list
             .map(line => new Set(line

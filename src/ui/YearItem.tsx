@@ -4,22 +4,22 @@ import { TaskProps } from "../components/Task";
 import TaskItem from "./TaskItem";
 
 export type YearItemProps = {
-    title: string;
+    id: string;
     tasks: Array<TaskProps>
 }
-const YearItem = ({title, tasks}: YearItemProps) => {
+const YearItem = ({id, tasks}: YearItemProps) => {
   return (
     <AccordionItem>
       <AccordionButton>
         <Box flex="1" textAlign="left">
-          {title}
+          {id}
         </Box>
         <AccordionIcon />
       </AccordionButton>
       <AccordionPanel pb={2}>
         <List>
             {
-                tasks.map((task, idx) => <TaskItem key={idx} {...task}/>)
+                tasks.map((task, idx) => <TaskItem key={idx} year={id} {...task}/>)
             }
         </List>
       </AccordionPanel>

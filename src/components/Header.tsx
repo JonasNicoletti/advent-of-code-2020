@@ -2,15 +2,15 @@ import { Flex, Heading, IconButton, Link } from "@chakra-ui/react";
 import { HamburgerIcon } from "@chakra-ui/icons";
 import React, {  } from "react";
 import { ColorModeSwitcher } from "../ColorModeSwitcher";
+import { Link as ReachLink } from 'react-router-dom';
 
 type HeaderProps = {
     openDrawer: () => void;
     closeDrawer: () => void
     isDrawerOpen: boolean;
-    goHome: () => void
 }
 
-export const Header = ({openDrawer, closeDrawer, isDrawerOpen, goHome}: HeaderProps) => {
+export const Header = ({openDrawer, closeDrawer, isDrawerOpen}: HeaderProps) => {
   return (
     <Flex as="nav" alignItems="center" justifyContent="center">
       <IconButton
@@ -25,7 +25,7 @@ export const Header = ({openDrawer, closeDrawer, isDrawerOpen, goHome}: HeaderPr
         left="0"
         onClick={isDrawerOpen ? () => closeDrawer() : () => openDrawer()}
       />
-      <Heading margin="2"><Link onClick={() => goHome()}>Advent of code</Link></Heading>
+      <Heading margin="2"><Link as={ReachLink} to={""}>Advent of code</Link></Heading>
       <ColorModeSwitcher position="absolute" top="0" right="0" />
     </Flex>
   );

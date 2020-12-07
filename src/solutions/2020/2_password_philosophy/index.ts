@@ -13,8 +13,8 @@ interface ExtractedInfos {
     password: string;
 }
 
-const passwordPhilosophy = async (part1: boolean): Promise<number> => {
-    const list = await getInput('./data/password_philosophy.txt');
+const passwordPhilosophy = async (part1: boolean, inputUri: string): Promise<number> => {
+    const list = await getInput(inputUri);
     return list.filter(elem => isPwdValid({ row: elem, part1: part1 })).length
 }
 

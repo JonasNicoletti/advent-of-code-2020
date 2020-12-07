@@ -8,8 +8,8 @@ interface Field {
 type Passport = { [key: string]: string };
 
 
-const passportProcessing = async (part1: boolean): Promise<number> => {
-    const list = cleanList(await getInput('./data/passport_processing.txt'));
+const passportProcessing = async (part1: boolean, inputUri: string): Promise<number> => {
+    const list = cleanList(await getInput(inputUri));
     return list.filter( passport => isValidPassport(passport, part1)).length
 }
 
