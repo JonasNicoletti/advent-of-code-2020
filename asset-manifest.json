@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.js": "/advent-of-code/static/js/main.98129b6b.chunk.js",
-    "main.js.map": "/advent-of-code/static/js/main.98129b6b.chunk.js.map",
+    "main.js": "/advent-of-code/static/js/main.f6606968.chunk.js",
+    "main.js.map": "/advent-of-code/static/js/main.f6606968.chunk.js.map",
     "runtime-main.js": "/advent-of-code/static/js/runtime-main.a3487de4.js",
     "runtime-main.js.map": "/advent-of-code/static/js/runtime-main.a3487de4.js.map",
-    "static/js/2.af30cf2a.chunk.js": "/advent-of-code/static/js/2.af30cf2a.chunk.js",
-    "static/js/2.af30cf2a.chunk.js.map": "/advent-of-code/static/js/2.af30cf2a.chunk.js.map",
+    "static/js/2.8646243b.chunk.js": "/advent-of-code/static/js/2.8646243b.chunk.js",
+    "static/js/2.8646243b.chunk.js.map": "/advent-of-code/static/js/2.8646243b.chunk.js.map",
     "static/js/3.2bf0ac9d.chunk.js": "/advent-of-code/static/js/3.2bf0ac9d.chunk.js",
     "static/js/3.2bf0ac9d.chunk.js.map": "/advent-of-code/static/js/3.2bf0ac9d.chunk.js.map",
     "index.html": "/advent-of-code/index.html",
-    "static/js/2.af30cf2a.chunk.js.LICENSE.txt": "/advent-of-code/static/js/2.af30cf2a.chunk.js.LICENSE.txt"
+    "static/js/2.8646243b.chunk.js.LICENSE.txt": "/advent-of-code/static/js/2.8646243b.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.a3487de4.js",
-    "static/js/2.af30cf2a.chunk.js",
-    "static/js/main.98129b6b.chunk.js"
+    "static/js/2.8646243b.chunk.js",
+    "static/js/main.f6606968.chunk.js"
   ]
 }
