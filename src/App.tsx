@@ -12,7 +12,7 @@ import Home from "./components/Home";
 import Task from "./components/Task";
 import SolutionContext from "./solutionContext";
 import solutions from "./solutions";
-import { Route, BrowserRouter as Router } from "react-router-dom";
+import { Route, HashRouter as Router } from "react-router-dom";
 
 export const App = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -27,7 +27,7 @@ export const App = () => {
   return (
     <ChakraProvider theme={customTheme}>
       <SolutionContext.Provider value={solutions}>
-        <Router basename={"advent-of-code"}>
+        <Router >
           <Box textAlign="center" fontSize="xl">
             <Header
               openDrawer={onOpen}

@@ -6,6 +6,7 @@ import passportProcessing from "./2020/4_passport_processing";
 import binaryBoarding from "./2020/5_binary_boarding";
 import customCustoms from "./2020/6_custom_customs";
 import handyHaversacks from "./2020/7_handy_haversacks";
+import handheldHalting from "./2020/8_handheld_halting";
 
 const solutions: YearItemProps[] = [
     {
@@ -87,6 +88,17 @@ const solutions: YearItemProps[] = [
                 solutionUri:
                   "https://raw.githubusercontent.com/JonasNicoletti/advent-of-code/main/src/solutions/2020/7_handy_haversacks/index.ts",
                 solutionFn: handyHaversacks,
+              },
+              {
+                id: "8",
+                title: "Day 8: Handheld Halting",
+                first: true,
+                second: true,
+                descriptionUri: "https://adventofcode.com/2020/day/8",
+                inputUri: "/data/handheld_halting.txt",
+                solutionUri:
+                  "https://raw.githubusercontent.com/JonasNicoletti/advent-of-code/main/src/solutions/2020/8_handheld_halting/index.ts",
+                solutionFn: handheldHalting,
               },
         ]
     }
