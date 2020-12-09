@@ -104,8 +104,8 @@ const solutions: YearItemProps[] = [
               {
                 id: "9",
                 title: "Day 9: Encoding Error",
-                first: false,
-                second: false,
+                first: true,
+                second: true,
                 descriptionUri: "https://adventofcode.com/2020/day/9",
                 inputUri: "/data/encoding_error.txt",
                 solutionUri:
