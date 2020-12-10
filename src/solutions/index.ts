@@ -8,6 +8,7 @@ import customCustoms from "./2020/6_custom_customs";
 import handyHaversacks from "./2020/7_handy_haversacks";
 import handheldHalting from "./2020/8_handheld_halting";
 import encodingError from "./2020/9_encoding_error";
+import adapterArray from "./2020/10_adapter_array";
 
 const solutions: YearItemProps[] = [
     {
@@ -111,6 +112,17 @@ const solutions: YearItemProps[] = [
                 solutionUri:
                   "https://raw.githubusercontent.com/JonasNicoletti/advent-of-code/main/src/solutions/2020/9_encoding_error/index.ts",
                 solutionFn: encodingError,
+              },
+              {
+                id: "10",
+                title: "Day 10: Adapter Array",
+                first: true,
+                second: true,
+                descriptionUri: "https://adventofcode.com/2020/day/10",
+                inputUri: "/data/adapter_array.txt",
+                solutionUri:
+                  "https://raw.githubusercontent.com/JonasNicoletti/advent-of-code/main/src/solutions/2020/10_adapter_array/index.ts",
+                solutionFn: adapterArray,
               },
         ]
     }
